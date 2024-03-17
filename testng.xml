@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Batch" parallel="classes">
+	  <groups>
+		  <run>
+			  <include name="Smoke"></include>
+		  </run>
+	  </groups>
+
+    <classes>
+      <class name="Package1NG.Campus"/>
+      <class name="Package2NG.Ducati"/>
+      <class name="Package2NG.Honda"/>
+      <class name="Package1NG.Puma"/>
+      <class name="Package1NG.Adidas"/>
+      <class name="Package2NG.Yamaha"/>
+      <class name="Package1NG.NIke"/>
+      <class name="Package1NG.Reebok"/>
+      <class name="Package2NG.Hero"/>
+      <class name="Package2NG.Kawasaki"/>
+    </classes>
+  </test> <!-- Batch -->
+</suite> <!-- Suite -->
